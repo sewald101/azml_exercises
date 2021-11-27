@@ -14564,10 +14564,10 @@ Licensed under the MIT License.</p>
 <p>Create a workspace object from the existing workspace. A <a href="https://docs.microsoft.com/python/api/azureml-core/azureml.core.workspace.workspace?view=azure-ml-py">Workspace</a> is a class that accepts your Azure subscription and resource information. It also creates a cloud resource to monitor and track your model runs. <code>Workspace.from_config()</code> reads the file <strong>config.json</strong> and loads the authentication details into an object named <code>ws</code>. <code>ws</code> is used throughout the rest of the code in this tutorial.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check core SDK version number</span>
@@ -14581,31 +14581,10 @@ Licensed under the MIT License.</p>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>SDK version: 1.34.0
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">azureml.core</span> <span class="kn">import</span> <span class="n">Workspace</span>
@@ -14627,7 +14606,7 @@ Licensed under the MIT License.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">azureml.core.datastore</span> <span class="kn">import</span> <span class="n">Datastore</span>
@@ -14661,7 +14640,7 @@ Licensed under the MIT License.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">azureml.core.dataset</span> <span class="kn">import</span> <span class="n">Dataset</span>
@@ -14686,7 +14665,7 @@ Licensed under the MIT License.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_images</span> <span class="o">=</span> <span class="n">input_images</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">workspace</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;input_images&quot;</span><span class="p">)</span>
@@ -14712,7 +14691,7 @@ Licensed under the MIT License.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14738,10 +14717,10 @@ Licensed under the MIT License.</p>
 <p>Now you register the model to your workspace, which allows you to easily retrieve it in the pipeline process. In the <code>register()</code> static function, the <code>model_name</code> parameter is the key you use to locate your model throughout the SDK.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">shutil</span>
@@ -14762,27 +14741,6 @@ Licensed under the MIT License.</p>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Registering model inception
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14791,10 +14749,10 @@ Licensed under the MIT License.</p>
 </blockquote>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">azureml.core.compute</span> <span class="kn">import</span> <span class="n">AmlCompute</span><span class="p">,</span> <span class="n">ComputeTarget</span>
@@ -14817,32 +14775,6 @@ Licensed under the MIT License.</p>
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>InProgress....
-SucceededProvisioning operation finished, operation &#34;Succeeded&#34;
-Succeeded
-AmlCompute wait for completion finished
-
-Minimum number of nodes requested have been provisioned
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14882,7 +14814,7 @@ Minimum number of nodes requested have been provisioned
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">azureml.core</span> <span class="kn">import</span> <span class="n">Environment</span>
@@ -14911,7 +14843,7 @@ Minimum number of nodes requested have been provisioned
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">azureml.pipeline.steps</span> <span class="kn">import</span> <span class="n">ParallelRunConfig</span>
@@ -14952,7 +14884,7 @@ Minimum number of nodes requested have been provisioned
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">azureml.pipeline.steps</span> <span class="kn">import</span> <span class="n">ParallelRunStep</span>
@@ -14994,10 +14926,10 @@ Minimum number of nodes requested have been provisioned
 <p>Note: The first pipeline run takes roughly <strong>15 minutes</strong>, as all dependencies must be downloaded, a Docker image is created, and the Python environment is provisioned/created. Running it again takes significantly less time as those resources are reused. However, total run time depends on the workload of your scripts and processes running in each pipeline step.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">azureml.core</span> <span class="kn">import</span> <span class="n">Experiment</span>
@@ -15012,33 +14944,10 @@ Minimum number of nodes requested have been provisioned
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Created step batchscoring-202111262205 [cb0ff973][a4b80424-7d07-4984-a0e2-6fdc8fa0a231], (This step will run and generate new outputs)
-Submitted PipelineRun da22e2dd-35bd-4d57-bc2c-5cac1b69f766
-Link to Azure Machine Learning Portal: https://ml.azure.com/runs/da22e2dd-35bd-4d57-bc2c-5cac1b69f766?wsid=/subscriptions/dca8aaf5-3be9-45c1-a5ec-bdbd92f56b11/resourcegroups/sewald101_ds_study/workspaces/ds_sandbox&amp;tid=32e80a84-7f73-4228-a9e5-ed9b6e541eab
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This will output information of the pipeline run, including the link to the details page of portal.</span>
@@ -15050,32 +14959,10 @@ Link to Azure Machine Learning Portal: https://ml.azure.com/runs/da22e2dd-35bd-4
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table style="width:100%"><tr><th>Experiment</th><th>Id</th><th>Type</th><th>Status</th><th>Details Page</th><th>Docs Page</th></tr><tr><td>Tutorial-Batch-Scoring</td><td>da22e2dd-35bd-4d57-bc2c-5cac1b69f766</td><td>azureml.PipelineRun</td><td>Running</td><td><a href="https://ml.azure.com/runs/da22e2dd-35bd-4d57-bc2c-5cac1b69f766?wsid=/subscriptions/dca8aaf5-3be9-45c1-a5ec-bdbd92f56b11/resourcegroups/sewald101_ds_study/workspaces/ds_sandbox&amp;tid=32e80a84-7f73-4228-a9e5-ed9b6e541eab" target="_blank" rel="noopener">Link to Azure Machine Learning studio</a></td><td><a href="https://docs.microsoft.com/en-us/python/api/overview/azure/ml/intro?view=azure-ml-py" target="_blank" rel="noopener">Link to Documentation</a></td></tr></table>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Wait the run for completion and show output log to console</span>
@@ -15085,931 +14972,6 @@ Link to Azure Machine Learning Portal: https://ml.azure.com/runs/da22e2dd-35bd-4
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>PipelineRunId: da22e2dd-35bd-4d57-bc2c-5cac1b69f766
-Link to Azure Machine Learning Portal: https://ml.azure.com/runs/da22e2dd-35bd-4d57-bc2c-5cac1b69f766?wsid=/subscriptions/dca8aaf5-3be9-45c1-a5ec-bdbd92f56b11/resourcegroups/sewald101_ds_study/workspaces/ds_sandbox&amp;tid=32e80a84-7f73-4228-a9e5-ed9b6e541eab
-PipelineRun Status: Running
-
-
-StepRunId: 7406bd19-a309-4f96-9193-3783b4f4860d
-Link to Azure Machine Learning Portal: https://ml.azure.com/runs/7406bd19-a309-4f96-9193-3783b4f4860d?wsid=/subscriptions/dca8aaf5-3be9-45c1-a5ec-bdbd92f56b11/resourcegroups/sewald101_ds_study/workspaces/ds_sandbox&amp;tid=32e80a84-7f73-4228-a9e5-ed9b6e541eab
-StepRun( batchscoring-202111262205 ) Status: Running
-
-Streaming azureml-logs/20_image_build_log.txt
-=============================================
-2021/11/26 22:08:20 Downloading source code...
-2021/11/26 22:08:20 Finished downloading source code
-2021/11/26 22:08:21 Creating Docker network: acb_default_network, driver: &#39;bridge&#39;
-2021/11/26 22:08:21 Successfully set up Docker network: acb_default_network
-2021/11/26 22:08:21 Setting up Docker configuration...
-2021/11/26 22:08:21 Successfully set up Docker configuration
-2021/11/26 22:08:21 Logging in to registry: aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io
-2021/11/26 22:08:22 Successfully logged into aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io
-2021/11/26 22:08:22 Executing step ID: acb_step_0. Timeout(sec): 5400, Working directory: &#39;&#39;, Network: &#39;acb_default_network&#39;
-2021/11/26 22:08:22 Scanning for dependencies...
-2021/11/26 22:08:23 Successfully scanned dependencies
-2021/11/26 22:08:23 Launching container with name: acb_step_0
-Sending build context to Docker daemon  66.56kB
-
-Step 1/19 : FROM mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.2-cudnn8-ubuntu18.04:20210806.v1@sha256:1429e14d6940f0458292331dcf48db8214e60e3ae51533ac5f407974510a7138
-mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.2-cudnn8-ubuntu18.04:20210806.v1@sha256:1429e14d6940f0458292331dcf48db8214e60e3ae51533ac5f407974510a7138: Pulling from azureml/openmpi3.1.2-cuda10.2-cudnn8-ubuntu18.04
-25fa05cd42bd: Pulling fs layer
-24a22c1b7260: Pulling fs layer
-8dea37be3176: Pulling fs layer
-b4dc78aeafca: Pulling fs layer
-a57130ec8de1: Pulling fs layer
-d5d706ce7b29: Pulling fs layer
-880a66924cf5: Pulling fs layer
-5fc696b8f9a5: Pulling fs layer
-c9b60d0c94b0: Pulling fs layer
-af4fd1318c0f: Pulling fs layer
-369693c4852a: Pulling fs layer
-070895472846: Pulling fs layer
-eee668d05864: Pulling fs layer
-3acbcc1117d9: Pulling fs layer
-d7c555641dbf: Pulling fs layer
-c76bf7e142c5: Pulling fs layer
-b4dc78aeafca: Waiting
-a57130ec8de1: Waiting
-d5d706ce7b29: Waiting
-880a66924cf5: Waiting
-5fc696b8f9a5: Waiting
-c9b60d0c94b0: Waiting
-3acbcc1117d9: Waiting
-af4fd1318c0f: Waiting
-d7c555641dbf: Waiting
-369693c4852a: Waiting
-c76bf7e142c5: Waiting
-eee668d05864: Waiting
-070895472846: Waiting
-24a22c1b7260: Verifying Checksum
-24a22c1b7260: Download complete
-b4dc78aeafca: Verifying Checksum
-b4dc78aeafca: Download complete
-8dea37be3176: Verifying Checksum
-8dea37be3176: Download complete
-a57130ec8de1: Verifying Checksum
-a57130ec8de1: Download complete
-25fa05cd42bd: Verifying Checksum
-25fa05cd42bd: Download complete
-25fa05cd42bd: Pull complete
-24a22c1b7260: Pull complete
-8dea37be3176: Pull complete
-b4dc78aeafca: Pull complete
-a57130ec8de1: Pull complete
-
-d5d706ce7b29: Download complete
-c9b60d0c94b0: Verifying Checksum
-c9b60d0c94b0: Download complete
-880a66924cf5: Verifying Checksum
-880a66924cf5: Download complete
-af4fd1318c0f: Verifying Checksum
-af4fd1318c0f: Download complete
-369693c4852a: Verifying Checksum
-369693c4852a: Download complete
-eee668d05864: Verifying Checksum
-eee668d05864: Download complete
-d5d706ce7b29: Pull complete
-3acbcc1117d9: Verifying Checksum
-3acbcc1117d9: Download complete
-d7c555641dbf: Verifying Checksum
-d7c555641dbf: Download complete
-c76bf7e142c5: Verifying Checksum
-c76bf7e142c5: Download complete
-070895472846: Verifying Checksum
-070895472846: Download complete
-5fc696b8f9a5: Verifying Checksum
-5fc696b8f9a5: Download complete
-880a66924cf5: Pull complete
-5fc696b8f9a5: Pull complete
-c9b60d0c94b0: Pull complete
-af4fd1318c0f: Pull complete
-369693c4852a: Pull complete
-070895472846: Pull complete
-eee668d05864: Pull complete
-3acbcc1117d9: Pull complete
-d7c555641dbf: Pull complete
-c76bf7e142c5: Pull complete
-Digest: sha256:1429e14d6940f0458292331dcf48db8214e60e3ae51533ac5f407974510a7138
-Status: Downloaded newer image for mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.2-cudnn8-ubuntu18.04:20210806.v1@sha256:1429e14d6940f0458292331dcf48db8214e60e3ae51533ac5f407974510a7138
- ---&gt; 2e563ea6d7fa
-Step 2/19 : USER root
- ---&gt; Running in 12946aaac7f7
-Removing intermediate container 12946aaac7f7
- ---&gt; 123b3e6e551c
-Step 3/19 : RUN mkdir -p $HOME/.cache
- ---&gt; Running in 3e12da617175
-Removing intermediate container 3e12da617175
- ---&gt; 142bfc61ce24
-Step 4/19 : WORKDIR /
- ---&gt; Running in 3c726745cbe7
-Removing intermediate container 3c726745cbe7
- ---&gt; 38ef3d912a94
-Step 5/19 : COPY azureml-environment-setup/99brokenproxy /etc/apt/apt.conf.d/
- ---&gt; 70f6441bdf22
-Step 6/19 : RUN if dpkg --compare-versions `conda --version | grep -oE &#39;[^ ]+$&#39;` lt 4.4.11; then conda install conda==4.4.11; fi
- ---&gt; Running in ae4d4953ae78
-Removing intermediate container ae4d4953ae78
- ---&gt; a611be613e0f
-Step 7/19 : COPY azureml-environment-setup/mutated_conda_dependencies.yml azureml-environment-setup/mutated_conda_dependencies.yml
- ---&gt; 34dda325d4ea
-Step 8/19 : RUN ldconfig /usr/local/cuda/lib64/stubs &amp;&amp; conda env create -p /azureml-envs/azureml_d87624153eb188609f91bcdde2707629 -f azureml-environment-setup/mutated_conda_dependencies.yml &amp;&amp; rm -rf &#34;$HOME/.cache/pip&#34; &amp;&amp; conda clean -aqy &amp;&amp; CONDA_ROOT_DIR=$(conda info --root) &amp;&amp; rm -rf &#34;$CONDA_ROOT_DIR/pkgs&#34; &amp;&amp; find &#34;$CONDA_ROOT_DIR&#34; -type d -name __pycache__ -exec rm -rf {} + &amp;&amp; ldconfig
- ---&gt; Running in a5ba3205f353
-Warning: you have pip-installed dependencies in your environment file, but you do not list pip itself as one of your conda dependencies.  Conda may not use the correct pip to install your packages, and they may end up in the wrong place.  Please add an explicit pip dependency.  I&#39;m adding one for you, but still nagging you.
-Collecting package metadata (repodata.json): ...working... 
-done
-Solving environment: ...working... done
-
-Downloading and Extracting Packages
-
-libffi-3.2.1         | 52 KB     |            |   0% 
-libffi-3.2.1         | 52 KB     | ########## | 100% 
-
-ca-certificates-2020 | 128 KB    |            |   0% 
-ca-certificates-2020 | 128 KB    | ########## | 100% 
-
-readline-7.0         | 387 KB    |            |   0% 
-readline-7.0         | 387 KB    | ########## | 100% 
-
-tk-8.6.10            | 3.2 MB    |            |   0% 
-tk-8.6.10            | 3.2 MB    | ########## | 100% 
-tk-8.6.10            | 3.2 MB    | ########## | 100% 
-
-sqlite-3.23.1        | 1.5 MB    |            |   0% 
-sqlite-3.23.1        | 1.5 MB    | ########## | 100% 
-sqlite-3.23.1        | 1.5 MB    | ########## | 100% 
-
-xz-5.2.5             | 438 KB    |            |   0% 
-xz-5.2.5             | 438 KB    | ########## | 100% 
-xz-5.2.5             | 438 KB    | ########## | 100% 
-
-certifi-2020.6.20    | 160 KB    |            |   0% 
-certifi-2020.6.20    | 160 KB    | ########## | 100% 
-
-openssl-1.0.2u       | 3.1 MB    |            |   0% 
-openssl-1.0.2u       | 3.1 MB    | ########## | 100% 
-openssl-1.0.2u       | 3.1 MB    | ########## | 100% 
-
-libedit-3.1          | 171 KB    |            |   0% 
-libedit-3.1          | 171 KB    | ########## | 100% 
-
-pip-20.2.4           | 2.0 MB    |            |   0% 
-pip-20.2.4           | 2.0 MB    | ########## | 100% 
-pip-20.2.4           | 2.0 MB    | ########## | 100% 
-
-zlib-1.2.11          | 120 KB    |            |   0% 
-zlib-1.2.11          | 120 KB    | ########## | 100% 
-
-wheel-0.35.1         | 36 KB     |            |   0% 
-wheel-0.35.1         | 36 KB     | ########## | 100% 
-
-setuptools-50.3.0    | 891 KB    |            |   0% 
-setuptools-50.3.0    | 891 KB    | ########## | 100% 
-setuptools-50.3.0    | 891 KB    | ########## | 100% 
-
-libgcc-ng-9.1.0      | 8.1 MB    |            |   0% 
-libgcc-ng-9.1.0      | 8.1 MB    | ########## | 100% 
-libgcc-ng-9.1.0      | 8.1 MB    | ########## | 100% 
-
-python-3.6.2         | 27.0 MB   |            |   0% 
-python-3.6.2         | 27.0 MB   | #1         |  11% 
-python-3.6.2         | 27.0 MB   | ##3        |  23% 
-python-3.6.2         | 27.0 MB   | ######8    |  68% 
-python-3.6.2         | 27.0 MB   | ########## | 100% 
-python-3.6.2         | 27.0 MB   | ########## | 100% 
-
-libstdcxx-ng-9.1.0   | 4.0 MB    |            |   0% 
-libstdcxx-ng-9.1.0   | 4.0 MB    | ######4    |  64% 
-libstdcxx-ng-9.1.0   | 4.0 MB    | ########## | 100% 
-libstdcxx-ng-9.1.0   | 4.0 MB    | ########## | 100% 
-
-ncurses-6.0          | 907 KB    |            |   0% 
-ncurses-6.0          | 907 KB    | ########## | 100% 
-ncurses-6.0          | 907 KB    | ########## | 100% 
-Preparing transaction: ...working... done
-Verifying transaction: ...working... done
-Executing transaction: ...working... done
-Installing pip dependencies: ...working... 
-Ran pip subprocess with arguments:
-[&#39;/azureml-envs/azureml_d87624153eb188609f91bcdde2707629/bin/python&#39;, &#39;-m&#39;, &#39;pip&#39;, &#39;install&#39;, &#39;-U&#39;, &#39;-r&#39;, &#39;/azureml-environment-setup/condaenv.sqfhbwae.requirements.txt&#39;]
-Pip subprocess output:
-Collecting tensorflow-gpu==1.15.2
-  Downloading tensorflow_gpu-1.15.2-cp36-cp36m-manylinux2010_x86_64.whl (411.0 MB)
-Collecting azureml-core~=1.34.0
-  Downloading azureml_core-1.34.0-py3-none-any.whl (2.2 MB)
-Collecting azureml-dataset-runtime[fuse]~=1.34.0
-  Downloading azureml_dataset_runtime-1.34.0-py3-none-any.whl (3.5 kB)
-Requirement already satisfied, skipping upgrade: wheel&gt;=0.26; python_version &gt;= &#34;3&#34; in /azureml-envs/azureml_d87624153eb188609f91bcdde2707629/lib/python3.6/site-packages (from tensorflow-gpu==1.15.2-&gt;-r /azureml-environment-setup/condaenv.sqfhbwae.requirements.txt (line 1)) (0.35.1)
-Collecting opt-einsum&gt;=2.3.2
-  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
-Collecting astor&gt;=0.6.0
-  Downloading astor-0.8.1-py2.py3-none-any.whl (27 kB)
-Collecting keras-applications&gt;=1.0.8
-  Downloading Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
-Collecting gast==0.2.2
-  Downloading gast-0.2.2.tar.gz (10 kB)
-Collecting absl-py&gt;=0.7.0
-  Downloading absl_py-1.0.0-py3-none-any.whl (126 kB)
-Collecting keras-preprocessing&gt;=1.0.5
-  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
-Collecting tensorboard&lt;1.16.0,&gt;=1.15.0
-  Downloading tensorboard-1.15.0-py3-none-any.whl (3.8 MB)
-Collecting wrapt&gt;=1.11.1
-  Downloading wrapt-1.13.3-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (78 kB)
-Collecting google-pasta&gt;=0.1.6
-  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
-Collecting protobuf&gt;=3.6.1
-  Downloading protobuf-3.19.1-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
-Collecting tensorflow-estimator==1.15.1
-  Downloading tensorflow_estimator-1.15.1-py2.py3-none-any.whl (503 kB)
-Collecting termcolor&gt;=1.1.0
-  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
-Collecting six&gt;=1.10.0
-  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
-Collecting numpy&lt;2.0,&gt;=1.16.0
-  Downloading numpy-1.19.5-cp36-cp36m-manylinux2010_x86_64.whl (14.8 MB)
-Collecting grpcio&gt;=1.8.6
-  Downloading grpcio-1.42.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.0 MB)
-Collecting requests&lt;3.0.0,&gt;=2.19.1
-  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
-Collecting ruamel.yaml&lt;0.17.5,&gt;=0.15.35
-  Downloading ruamel.yaml-0.17.4-py3-none-any.whl (101 kB)
-Collecting adal&lt;=1.2.7,&gt;=1.2.0
-  Downloading adal-1.2.7-py2.py3-none-any.whl (55 kB)
-Collecting azure-mgmt-keyvault&lt;10.0.0,&gt;=0.40.0
-  Downloading azure_mgmt_keyvault-9.3.0-py2.py3-none-any.whl (412 kB)
-Collecting pyopenssl&lt;21.0.0
-  Downloading pyOpenSSL-20.0.1-py2.py3-none-any.whl (54 kB)
-Collecting msrest&lt;1.0.0,&gt;=0.5.1
-  Downloading msrest-0.6.21-py2.py3-none-any.whl (85 kB)
-Collecting msrestazure&lt;=0.6.4,&gt;=0.4.33
-  Downloading msrestazure-0.6.4-py2.py3-none-any.whl (40 kB)
-Collecting docker&lt;6.0.0
-  Downloading docker-5.0.3-py2.py3-none-any.whl (146 kB)
-Collecting ndg-httpsclient&lt;=0.5.1
-  Downloading ndg_httpsclient-0.5.1-py3-none-any.whl (34 kB)
-Collecting cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,&lt;4.0.0
-  Downloading cryptography-3.4.8-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
-Collecting azure-mgmt-resource&lt;15.0.0,&gt;=1.2.1
-  Downloading azure_mgmt_resource-13.0.0-py2.py3-none-any.whl (1.3 MB)
-Collecting azure-common&lt;2.0.0,&gt;=1.1.12
-  Downloading azure_common-1.1.27-py2.py3-none-any.whl (12 kB)
-Collecting jmespath&lt;1.0.0
-  Downloading jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
-Collecting azure-mgmt-storage&lt;16.0.0,&gt;=1.5.0
-  Downloading azure_mgmt_storage-11.2.0-py2.py3-none-any.whl (547 kB)
-Collecting jsonpickle&lt;3.0.0
-  Downloading jsonpickle-2.0.0-py2.py3-none-any.whl (37 kB)
-Collecting urllib3&lt;=1.26.6,&gt;=1.23
-  Downloading urllib3-1.26.6-py2.py3-none-any.whl (138 kB)
-Collecting contextlib2&lt;22.0.0
-  Downloading contextlib2-21.6.0-py2.py3-none-any.whl (13 kB)
-Collecting PyJWT&lt;3.0.0
-  Downloading PyJWT-2.3.0-py3-none-any.whl (16 kB)
-Collecting pytz
-  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
-Collecting azure-mgmt-containerregistry&gt;=2.0.0
-  Downloading azure_mgmt_containerregistry-8.2.0-py2.py3-none-any.whl (928 kB)
-Collecting SecretStorage&lt;4.0.0
-  Downloading SecretStorage-3.3.1-py3-none-any.whl (15 kB)
-Collecting pathspec&lt;1.0.0
-  Downloading pathspec-0.9.0-py2.py3-none-any.whl (31 kB)
-Collecting backports.tempfile
-  Downloading backports.tempfile-1.0-py2.py3-none-any.whl (4.4 kB)
-Collecting azure-mgmt-authorization&lt;1.0.0,&gt;=0.40.0
-  Downloading azure_mgmt_authorization-0.61.0-py2.py3-none-any.whl (94 kB)
-Collecting azure-graphrbac&lt;1.0.0,&gt;=0.40.0
-  Downloading azure_graphrbac-0.61.1-py2.py3-none-any.whl (141 kB)
-Collecting python-dateutil&lt;3.0.0,&gt;=2.7.3
-  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-Collecting azureml-dataprep&lt;2.23.0a,&gt;=2.22.0a
-  Downloading azureml_dataprep-2.22.2-py3-none-any.whl (39.4 MB)
-Collecting pyarrow&lt;4.0.0,&gt;=0.17.0
-  Downloading pyarrow-3.0.0-cp36-cp36m-manylinux2014_x86_64.whl (20.7 MB)
-Collecting fusepy&lt;4.0.0,&gt;=3.0.1; extra == &#34;fuse&#34;
-  Downloading fusepy-3.0.1.tar.gz (11 kB)
-Collecting h5py
-  Downloading h5py-3.1.0-cp36-cp36m-manylinux1_x86_64.whl (4.0 MB)
-Requirement already satisfied, skipping upgrade: setuptools&gt;=41.0.0 in /azureml-envs/azureml_d87624153eb188609f91bcdde2707629/lib/python3.6/site-packages (from tensorboard&lt;1.16.0,&gt;=1.15.0-&gt;tensorflow-gpu==1.15.2-&gt;-r /azureml-environment-setup/condaenv.sqfhbwae.requirements.txt (line 1)) (50.3.0.post20201006)
-Collecting werkzeug&gt;=0.11.15
-  Downloading Werkzeug-2.0.2-py3-none-any.whl (288 kB)
-Collecting markdown&gt;=2.6.8
-  Downloading Markdown-3.3.6-py3-none-any.whl (97 kB)
-Requirement already satisfied, skipping upgrade: certifi&gt;=2017.4.17 in /azureml-envs/azureml_d87624153eb188609f91bcdde2707629/lib/python3.6/site-packages (from requests&lt;3.0.0,&gt;=2.19.1-&gt;azureml-core~=1.34.0-&gt;-r /azureml-environment-setup/condaenv.sqfhbwae.requirements.txt (line 2)) (2020.6.20)
-Collecting charset-normalizer~=2.0.0; python_version &gt;= &#34;3&#34;
-  Downloading charset_normalizer-2.0.8-py3-none-any.whl (39 kB)
-Collecting idna&lt;4,&gt;=2.5; python_version &gt;= &#34;3&#34;
-  Downloading idna-3.3-py3-none-any.whl (61 kB)
-Collecting ruamel.yaml.clib&gt;=0.1.2; platform_python_implementation == &#34;CPython&#34; and python_version &lt; &#34;3.10&#34;
-  Downloading ruamel.yaml.clib-0.2.6-cp36-cp36m-manylinux1_x86_64.whl (552 kB)
-Collecting azure-mgmt-core&lt;2.0.0,&gt;=1.2.0
-  Downloading azure_mgmt_core-1.3.0-py2.py3-none-any.whl (25 kB)
-Collecting requests-oauthlib&gt;=0.5.0
-  Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
-Collecting isodate&gt;=0.6.0
-  Downloading isodate-0.6.0-py2.py3-none-any.whl (45 kB)
-Collecting websocket-client&gt;=0.32.0
-  Downloading websocket_client-1.2.1-py2.py3-none-any.whl (52 kB)
-Collecting pyasn1&gt;=0.1.1
-  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
-Collecting cffi&gt;=1.12
-  Downloading cffi-1.15.0-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (405 kB)
-Collecting importlib-metadata; python_version &lt; &#34;3.8&#34;
-  Downloading importlib_metadata-4.8.2-py3-none-any.whl (17 kB)
-Collecting jeepney&gt;=0.6
-  Downloading jeepney-0.7.1-py3-none-any.whl (54 kB)
-Collecting backports.weakref
-  Downloading backports.weakref-1.0.post1-py2.py3-none-any.whl (5.2 kB)
-Collecting azureml-dataprep-native&lt;39.0.0,&gt;=38.0.0
-  Downloading azureml_dataprep_native-38.0.0-cp36-cp36m-manylinux1_x86_64.whl (1.3 MB)
-Collecting azureml-dataprep-rslex~=1.20.0dev0
-  Downloading azureml_dataprep_rslex-1.20.2-cp36-cp36m-manylinux1_x86_64.whl (10.9 MB)
-Collecting azure-identity&lt;1.5.0,&gt;=1.2.0
-  Downloading azure_identity-1.4.1-py2.py3-none-any.whl (86 kB)
-Collecting cloudpickle&lt;2.0.0,&gt;=1.1.0
-  Downloading cloudpickle-1.6.0-py3-none-any.whl (23 kB)
-Collecting dotnetcore2&lt;3.0.0,&gt;=2.1.14
-  Downloading dotnetcore2-2.1.21-py3-none-manylinux1_x86_64.whl (28.7 MB)
-Collecting cached-property; python_version &lt; &#34;3.8&#34;
-  Downloading cached_property-1.5.2-py2.py3-none-any.whl (7.6 kB)
-Collecting dataclasses; python_version &lt; &#34;3.7&#34;
-  Downloading dataclasses-0.8-py3-none-any.whl (19 kB)
-Collecting azure-core&lt;2.0.0,&gt;=1.15.0
-  Downloading azure_core-1.20.1-py2.py3-none-any.whl (177 kB)
-Collecting oauthlib&gt;=3.0.0
-  Downloading oauthlib-3.1.1-py2.py3-none-any.whl (146 kB)
-Collecting pycparser
-  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
-Collecting zipp&gt;=0.5
-  Downloading zipp-3.6.0-py3-none-any.whl (5.3 kB)
-Collecting typing-extensions&gt;=3.6.4; python_version &lt; &#34;3.8&#34;
-  Downloading typing_extensions-4.0.0-py3-none-any.whl (22 kB)
-Collecting msal&lt;2.0.0,&gt;=1.3.0
-  Downloading msal-1.16.0-py2.py3-none-any.whl (78 kB)
-Collecting msal-extensions~=0.2.2
-  Downloading msal_extensions-0.2.2-py2.py3-none-any.whl (15 kB)
-Collecting distro&gt;=1.2.0
-  Downloading distro-1.6.0-py2.py3-none-any.whl (19 kB)
-Collecting portalocker~=1.0; platform_system != &#34;Windows&#34;
-  Downloading portalocker-1.7.1-py2.py3-none-any.whl (10 kB)
-Building wheels for collected packages: gast, termcolor, fusepy
-  Building wheel for gast (setup.py): started
-  Building wheel for gast (setup.py): finished with status &#39;done&#39;
-  Created wheel for gast: filename=gast-0.2.2-py3-none-any.whl size=7540 sha256=ecfbf22c1d77b9fc6b16f5945942780c6e953da0a1bc0dafbe8bd9fc5031e8c2
-  Stored in directory: /root/.cache/pip/wheels/19/a7/b9/0740c7a3a7d1d348f04823339274b90de25fbcd217b2ee1fbe
-  Building wheel for termcolor (setup.py): started
-  Building wheel for termcolor (setup.py): finished with status &#39;done&#39;
-  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=ecbd958c7a68700caaf578df6151c972629c1aee3531a467d542ed000e402b13
-  Stored in directory: /root/.cache/pip/wheels/93/2a/eb/e58dbcbc963549ee4f065ff80a59f274cc7210b6eab962acdc
-  Building wheel for fusepy (setup.py): started
-  Building wheel for fusepy (setup.py): finished with status &#39;done&#39;
-  Created wheel for fusepy: filename=fusepy-3.0.1-py3-none-any.whl size=10504 sha256=b748532dc341a2891b17be4f06ff26ace0524346be0140a2bed045b7decf5dc3
-  Stored in directory: /root/.cache/pip/wheels/21/5c/83/1dd7e8a232d12227e5410120f4374b33adeb4037473105b079
-Successfully built gast termcolor fusepy
-Installing collected packages: numpy, opt-einsum, astor, cached-property, h5py, keras-applications, gast, six, absl-py, keras-preprocessing, grpcio, dataclasses, werkzeug, zipp, typing-extensions, importlib-metadata, markdown, protobuf, tensorboard, wrapt, google-pasta, tensorflow-estimator, termcolor, tensorflow-gpu, urllib3, charset-normalizer, idna, requests, ruamel.yaml.clib, ruamel.yaml, pycparser, cffi, cryptography, PyJWT, python-dateutil, adal, oauthlib, requests-oauthlib, isodate, msrest, azure-core, azure-mgmt-core, azure-common, azure-mgmt-keyvault, pyopenssl, msrestazure, websocket-client, docker, pyasn1, ndg-httpsclient, azure-mgmt-resource, jmespath, azure-mgmt-storage, jsonpickle, contextlib2, pytz, azure-mgmt-containerregistry, jeepney, SecretStorage, pathspec, backports.weakref, backports.tempfile, azure-mgmt-authorization, azure-graphrbac, azureml-core, azureml-dataprep-native, azureml-dataprep-rslex, msal, portalocker, msal-extensions, azure-identity, cloudpickle, distro, dotnetcore2, azureml-dataprep, pyarrow, fusepy, azureml-dataset-runtime
-Successfully installed PyJWT-2.3.0 SecretStorage-3.3.1 absl-py-1.0.0 adal-1.2.7 astor-0.8.1 azure-common-1.1.27 azure-core-1.20.1 azure-graphrbac-0.61.1 azure-identity-1.4.1 azure-mgmt-authorization-0.61.0 azure-mgmt-containerregistry-8.2.0 azure-mgmt-core-1.3.0 azure-mgmt-keyvault-9.3.0 azure-mgmt-resource-13.0.0 azure-mgmt-storage-11.2.0 azureml-core-1.34.0 azureml-dataprep-2.22.2 azureml-dataprep-native-38.0.0 azureml-dataprep-rslex-1.20.2 azureml-dataset-runtime-1.34.0 backports.tempfile-1.0 backports.weakref-1.0.post1 cached-property-1.5.2 cffi-1.15.0 charset-normalizer-2.0.8 cloudpickle-1.6.0 contextlib2-21.6.0 cryptography-3.4.8 dataclasses-0.8 distro-1.6.0 docker-5.0.3 dotnetcore2-2.1.21 fusepy-3.0.1 gast-0.2.2 google-pasta-0.2.0 grpcio-1.42.0 h5py-3.1.0 idna-3.3 importlib-metadata-4.8.2 isodate-0.6.0 jeepney-0.7.1 jmespath-0.10.0 jsonpickle-2.0.0 keras-applications-1.0.8 keras-preprocessing-1.1.2 markdown-3.3.6 msal-1.16.0 msal-extensions-0.2.2 msrest-0.6.21 msrestazure-0.6.4 ndg-httpsclient-0.5.1 numpy-1.19.5 oauthlib-3.1.1 opt-einsum-3.3.0 pathspec-0.9.0 portalocker-1.7.1 protobuf-3.19.1 pyarrow-3.0.0 pyasn1-0.4.8 pycparser-2.21 pyopenssl-20.0.1 python-dateutil-2.8.2 pytz-2021.3 requests-2.26.0 requests-oauthlib-1.3.0 ruamel.yaml-0.17.4 ruamel.yaml.clib-0.2.6 six-1.16.0 tensorboard-1.15.0 tensorflow-estimator-1.15.1 tensorflow-gpu-1.15.2 termcolor-1.1.0 typing-extensions-4.0.0 urllib3-1.26.6 websocket-client-1.2.1 werkzeug-2.0.2 wrapt-1.13.3 zipp-3.6.0
-
-done
-#
-# To activate this environment, use
-#
-#     $ conda activate /azureml-envs/azureml_d87624153eb188609f91bcdde2707629
-#
-# To deactivate an active environment, use
-#
-#     $ conda deactivate
-
-<span class="ansi-red-intense-fg">
-
-==&gt; WARNING: A newer version of conda exists. &lt;==
-  current version: 4.9.2
-  latest version: 4.10.3
-
-Please update conda by running
-
-    $ conda update -n base -c defaults conda
-
-
-</span>WARNING: /root/.conda/pkgs does not exist
-Removing intermediate container a5ba3205f353
- ---&gt; 9e80a5578059
-Step 9/19 : ENV PATH /azureml-envs/azureml_d87624153eb188609f91bcdde2707629/bin:$PATH
- ---&gt; Running in 390915808e07
-Removing intermediate container 390915808e07
- ---&gt; 68296f7b3ef4
-Step 10/19 : COPY azureml-environment-setup/send_conda_dependencies.py azureml-environment-setup/send_conda_dependencies.py
- ---&gt; 4ab12f8099a1
-Step 11/19 : RUN echo &#34;Copying environment context&#34;
- ---&gt; Running in 6ab6ad50f075
-Copying environment context
-Removing intermediate container 6ab6ad50f075
- ---&gt; d9dfd83b2832
-Step 12/19 : COPY azureml-environment-setup/environment_context.json azureml-environment-setup/environment_context.json
- ---&gt; cbbc1c7388de
-Step 13/19 : RUN python /azureml-environment-setup/send_conda_dependencies.py -p /azureml-envs/azureml_d87624153eb188609f91bcdde2707629
- ---&gt; Running in 834b7f0969ec
-Report materialized dependencies for the environment
-Reading environment context
-Exporting conda environment
-Sending request with materialized conda environment details
-Successfully sent materialized environment details
-Removing intermediate container 834b7f0969ec
- ---&gt; 83adf37a8d62
-Step 14/19 : ENV AZUREML_CONDA_ENVIRONMENT_PATH /azureml-envs/azureml_d87624153eb188609f91bcdde2707629
- ---&gt; Running in 2edbc1bc7c3e
-Removing intermediate container 2edbc1bc7c3e
- ---&gt; 0f9fe0ed5484
-Step 15/19 : ENV LD_LIBRARY_PATH /azureml-envs/azureml_d87624153eb188609f91bcdde2707629/lib:$LD_LIBRARY_PATH
- ---&gt; Running in 88f3adf47fa7
-Removing intermediate container 88f3adf47fa7
- ---&gt; 7442647767a2
-Step 16/19 : COPY azureml-environment-setup/spark_cache.py azureml-environment-setup/log4j.properties /azureml-environment-setup/
- ---&gt; 8a80f14ff7b4
-Step 17/19 : RUN if [ $SPARK_HOME ]; then /bin/bash -c &#39;$SPARK_HOME/bin/spark-submit  /azureml-environment-setup/spark_cache.py&#39;; fi
- ---&gt; Running in 7e8b5043d681
-Removing intermediate container 7e8b5043d681
- ---&gt; bbc081a43391
-Step 18/19 : ENV AZUREML_ENVIRONMENT_IMAGE True
- ---&gt; Running in 629c281ed415
-Removing intermediate container 629c281ed415
- ---&gt; 8d47211acbba
-Step 19/19 : CMD [&#34;bash&#34;]
- ---&gt; Running in 0b6ef62c6cc7
-Removing intermediate container 0b6ef62c6cc7
- ---&gt; f0339818b316
-Successfully built f0339818b316
-Successfully tagged aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io/azureml/azureml_93ef7850b88195f6aa16204568310fef:latest
-Successfully tagged aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io/azureml/azureml_93ef7850b88195f6aa16204568310fef:1
-2021/11/26 22:13:26 Successfully executed container: acb_step_0
-2021/11/26 22:13:26 Executing step ID: acb_step_1. Timeout(sec): 5400, Working directory: &#39;&#39;, Network: &#39;acb_default_network&#39;
-2021/11/26 22:13:26 Pushing image: aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io/azureml/azureml_93ef7850b88195f6aa16204568310fef:1, attempt 1
-The push refers to repository [aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io/azureml/azureml_93ef7850b88195f6aa16204568310fef]
-6e59f533137a: Preparing
-7e5f57198983: Preparing
-52106c2d78b8: Preparing
-5bfe002998da: Preparing
-020343a05e7b: Preparing
-6d222256d91a: Preparing
-21eecdcd37e6: Preparing
-1686c27a1818: Preparing
-2a75f829933b: Preparing
-a8ecc504640e: Preparing
-70e14e071428: Preparing
-17d132d5ca4d: Preparing
-521487342579: Preparing
-b50a98532ea5: Preparing
-0297fca28715: Preparing
-ee663d43545d: Preparing
-cad3bbe09e8c: Preparing
-46b4a80fbeda: Preparing
-df776e7c9ca6: Preparing
-c2821764f816: Preparing
-41b27cd07d0f: Preparing
-6fe66186b9a7: Preparing
-477fc0f58c70: Preparing
-542257f2fd32: Preparing
-8f8f0266f834: Preparing
-6d222256d91a: Waiting
-21eecdcd37e6: Waiting
-1686c27a1818: Waiting
-2a75f829933b: Waiting
-a8ecc504640e: Waiting
-70e14e071428: Waiting
-17d132d5ca4d: Waiting
-521487342579: Waiting
-b50a98532ea5: Waiting
-0297fca28715: Waiting
-ee663d43545d: Waiting
-cad3bbe09e8c: Waiting
-46b4a80fbeda: Waiting
-df776e7c9ca6: Waiting
-c2821764f816: Waiting
-41b27cd07d0f: Waiting
-6fe66186b9a7: Waiting
-477fc0f58c70: Waiting
-542257f2fd32: Waiting
-8f8f0266f834: Waiting
-52106c2d78b8: Pushed
-5bfe002998da: Pushed
-7e5f57198983: Pushed
-6e59f533137a: Pushed
-1686c27a1818: Pushed
-6d222256d91a: Pushed
-21eecdcd37e6: Pushed
-2a75f829933b: Pushed
-a8ecc504640e: Pushed
-70e14e071428: Pushed
-521487342579: Pushed
-0297fca28715: Pushed
-17d132d5ca4d: Pushed
-ee663d43545d: Pushed
-cad3bbe09e8c: Pushed
-b50a98532ea5: Pushed
-41b27cd07d0f: Pushed
-6fe66186b9a7: Pushed
-477fc0f58c70: Pushed
-542257f2fd32: Pushed
-8f8f0266f834: Pushed
-c2821764f816: Pushed
-df776e7c9ca6: Pushed
-46b4a80fbeda: Pushed
-020343a05e7b: Pushed
-1: digest: sha256:cffe2fbd22cacbee13f9684be1a16848bcbe2386666f882e3442811232c97e54 size: 5575
-2021/11/26 22:17:27 Successfully pushed image: aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io/azureml/azureml_93ef7850b88195f6aa16204568310fef:1
-2021/11/26 22:17:27 Executing step ID: acb_step_2. Timeout(sec): 5400, Working directory: &#39;&#39;, Network: &#39;acb_default_network&#39;
-2021/11/26 22:17:27 Pushing image: aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io/azureml/azureml_93ef7850b88195f6aa16204568310fef:latest, attempt 1
-The push refers to repository [aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io/azureml/azureml_93ef7850b88195f6aa16204568310fef]
-6e59f533137a: Preparing
-7e5f57198983: Preparing
-52106c2d78b8: Preparing
-5bfe002998da: Preparing
-020343a05e7b: Preparing
-6d222256d91a: Preparing
-21eecdcd37e6: Preparing
-1686c27a1818: Preparing
-2a75f829933b: Preparing
-a8ecc504640e: Preparing
-70e14e071428: Preparing
-17d132d5ca4d: Preparing
-521487342579: Preparing
-b50a98532ea5: Preparing
-0297fca28715: Preparing
-ee663d43545d: Preparing
-cad3bbe09e8c: Preparing
-46b4a80fbeda: Preparing
-df776e7c9ca6: Preparing
-c2821764f816: Preparing
-41b27cd07d0f: Preparing
-6fe66186b9a7: Preparing
-477fc0f58c70: Preparing
-542257f2fd32: Preparing
-8f8f0266f834: Preparing
-6d222256d91a: Waiting
-21eecdcd37e6: Waiting
-1686c27a1818: Waiting
-2a75f829933b: Waiting
-ee663d43545d: Waiting
-a8ecc504640e: Waiting
-70e14e071428: Waiting
-17d132d5ca4d: Waiting
-521487342579: Waiting
-b50a98532ea5: Waiting
-0297fca28715: Waiting
-cad3bbe09e8c: Waiting
-46b4a80fbeda: Waiting
-df776e7c9ca6: Waiting
-6fe66186b9a7: Waiting
-c2821764f816: Waiting
-477fc0f58c70: Waiting
-41b27cd07d0f: Waiting
-542257f2fd32: Waiting
-8f8f0266f834: Waiting
-6e59f533137a: Layer already exists
-5bfe002998da: Layer already exists
-52106c2d78b8: Layer already exists
-020343a05e7b: Layer already exists
-7e5f57198983: Layer already exists
-6d222256d91a: Layer already exists
-1686c27a1818: Layer already exists
-21eecdcd37e6: Layer already exists
-2a75f829933b: Layer already exists
-a8ecc504640e: Layer already exists
-17d132d5ca4d: Layer already exists
-70e14e071428: Layer already exists
-521487342579: Layer already exists
-0297fca28715: Layer already exists
-b50a98532ea5: Layer already exists
-df776e7c9ca6: Layer already exists
-46b4a80fbeda: Layer already exists
-ee663d43545d: Layer already exists
-c2821764f816: Layer already exists
-41b27cd07d0f: Layer already exists
-cad3bbe09e8c: Layer already exists
-477fc0f58c70: Layer already exists
-6fe66186b9a7: Layer already exists
-542257f2fd32: Layer already exists
-8f8f0266f834: Layer already exists
-latest: digest: sha256:cffe2fbd22cacbee13f9684be1a16848bcbe2386666f882e3442811232c97e54 size: 5575
-2021/11/26 22:17:29 Successfully pushed image: aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io/azureml/azureml_93ef7850b88195f6aa16204568310fef:latest
-2021/11/26 22:17:29 Step ID: acb_step_0 marked as successful (elapsed time in seconds: 304.019905)
-2021/11/26 22:17:29 Populating digests for step ID: acb_step_0...
-2021/11/26 22:17:30 Successfully populated digests for step ID: acb_step_0
-2021/11/26 22:17:30 Step ID: acb_step_1 marked as successful (elapsed time in seconds: 241.195615)
-2021/11/26 22:17:30 Step ID: acb_step_2 marked as successful (elapsed time in seconds: 1.412932)
-2021/11/26 22:17:30 The following dependencies were found:
-2021/11/26 22:17:30 
-- image:
-    registry: aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io
-    repository: azureml/azureml_93ef7850b88195f6aa16204568310fef
-    tag: latest
-    digest: sha256:cffe2fbd22cacbee13f9684be1a16848bcbe2386666f882e3442811232c97e54
-  runtime-dependency:
-    registry: mcr.microsoft.com
-    repository: azureml/openmpi3.1.2-cuda10.2-cudnn8-ubuntu18.04
-    tag: 20210806.v1
-    digest: sha256:1429e14d6940f0458292331dcf48db8214e60e3ae51533ac5f407974510a7138
-  git: {}
-- image:
-    registry: aba3abad41a64468b01e0ee8d93e4fdb.azurecr.io
-    repository: azureml/azureml_93ef7850b88195f6aa16204568310fef
-    tag: &#34;1&#34;
-    digest: sha256:cffe2fbd22cacbee13f9684be1a16848bcbe2386666f882e3442811232c97e54
-  runtime-dependency:
-    registry: mcr.microsoft.com
-    repository: azureml/openmpi3.1.2-cuda10.2-cudnn8-ubuntu18.04
-    tag: 20210806.v1
-    digest: sha256:1429e14d6940f0458292331dcf48db8214e60e3ae51533ac5f407974510a7138
-  git: {}
-
-
-Run ID: cc2 was successful after 9m11s
-
-Streaming azureml-logs/55_azureml-execution-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt
-========================================================================================================================
-2021-11-26T22:30:21Z Running following command: /bin/bash -c sudo blobfuse /mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/mounts/workspaceblobstore --tmp-path=/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/caches/workspaceblobstore --file-cache-timeout-in-seconds=1000000 --cache-size-mb=316480 -o nonempty -o allow_other --config-file=/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/configs/workspaceblobstore.cfg --log-level=LOG_WARNING
-2021-11-26T22:30:21Z Successfully mounted a/an Blobfuse File System at /mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/mounts/workspaceblobstore
-2021-11-26T22:30:22Z Failed to start nvidia-fabricmanager due to exit status 5 with output Failed to start nvidia-fabricmanager.service: Unit nvidia-fabricmanager.service not found.
-. Please ignore this if the GPUs don&#39;t utilize NVIDIA® NVLink® switches.
-2021-11-26T22:30:22Z Starting output-watcher...
-2021-11-26T22:30:22Z IsDedicatedCompute == False, starting polling for Low-Pri Preemption
-2021-11-26T22:30:22Z Executing &#39;Copy ACR Details file&#39; on 10.0.0.4
-2021-11-26T22:30:22Z Copy ACR Details file succeeded on 10.0.0.4. Output: 
-&gt;&gt;&gt;   
-&gt;&gt;&gt;   
-Login Succeeded
-Using default tag: latest
-latest: Pulling from azureml/azureml_a3838f189be249e44b1854979d50d961
-92473f7ef455: Pulling fs layer
-fb52bde70123: Pulling fs layer
-64788f86be3f: Pulling fs layer
-33f6d5f2e001: Pulling fs layer
-eeb715f1b6ae: Pulling fs layer
-fe519cf36537: Pulling fs layer
-58ff99196c15: Pulling fs layer
-9b13f06a8eff: Pulling fs layer
-2d4e93adbf58: Pulling fs layer
-6ee7c3767844: Pulling fs layer
-62cfc3ccb8ab: Pulling fs layer
-4a7af9d757ee: Pulling fs layer
-ab22bf53a676: Pulling fs layer
-9a30cb6a4f3f: Pulling fs layer
-a2a306df3bfe: Pulling fs layer
-32fc972a91bd: Pulling fs layer
-503ba933a092: Pulling fs layer
-fe519cf36537: Waiting
-8b7597d2c5e4: Pulling fs layer
-bf266c674ed9: Pulling fs layer
-58ff99196c15: Waiting
-9b13f06a8eff: Waiting
-2d4e93adbf58: Waiting
-6ee7c3767844: Waiting
-62cfc3ccb8ab: Waiting
-32fc972a91bd: Waiting
-4a7af9d757ee: Waiting
-503ba933a092: Waiting
-ab22bf53a676: Waiting
-8b7597d2c5e4: Waiting
-9a30cb6a4f3f: Waiting
-a2a306df3bfe: Waiting
-bf266c674ed9: Waiting
-33f6d5f2e001: Waiting
-eeb715f1b6ae: Waiting
-64788f86be3f: Download complete
-fb52bde70123: Download complete
-33f6d5f2e001: Verifying Checksum
-33f6d5f2e001: Download complete
-92473f7ef455: Download complete
-fe519cf36537: Verifying Checksum
-fe519cf36537: Download complete
-58ff99196c15: Verifying Checksum
-58ff99196c15: Download complete
-eeb715f1b6ae: Verifying Checksum
-eeb715f1b6ae: Download complete
-9b13f06a8eff: Verifying Checksum
-9b13f06a8eff: Download complete
-6ee7c3767844: Verifying Checksum
-6ee7c3767844: Download complete
-4a7af9d757ee: Download complete
-2d4e93adbf58: Verifying Checksum
-2d4e93adbf58: Download complete
-62cfc3ccb8ab: Verifying Checksum
-62cfc3ccb8ab: Download complete
-ab22bf53a676: Download complete
-32fc972a91bd: Verifying Checksum
-32fc972a91bd: Download complete
-a2a306df3bfe: Verifying Checksum
-a2a306df3bfe: Download complete
-503ba933a092: Verifying Checksum
-503ba933a092: Download complete
-8b7597d2c5e4: Download complete
-bf266c674ed9: Verifying Checksum
-bf266c674ed9: Download complete
-92473f7ef455: Pull complete
-9a30cb6a4f3f: Verifying Checksum
-9a30cb6a4f3f: Download complete
-fb52bde70123: Pull complete
-64788f86be3f: Pull complete
-33f6d5f2e001: Pull complete
-eeb715f1b6ae: Pull complete
-fe519cf36537: Pull complete
-58ff99196c15: Pull complete
-9b13f06a8eff: Pull complete
-2d4e93adbf58: Pull complete
-6ee7c3767844: Pull complete
-62cfc3ccb8ab: Pull complete
-4a7af9d757ee: Pull complete
-ab22bf53a676: Pull complete
-
-Streaming azureml-logs/65_job_prep-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt
-===============================================================================================================
-[2021-11-26T22:30:44.347028] Entering job preparation.
-[2021-11-26T22:30:45.187883] Starting job preparation.
-[2021-11-26T22:30:45.187914] Extracting the control code.
-[2021-11-26T22:30:45.188278] Starting extract_project.
-[2021-11-26T22:30:45.188317] Starting to extract zip file.
-[2021-11-26T22:30:45.206435] Finished extracting zip file.
-[2021-11-26T22:30:45.209580] Using urllib.request Python 3.0 or later
-[2021-11-26T22:30:45.209621] Start fetching snapshots.
-[2021-11-26T22:30:45.209650] Start fetching snapshot.
-[2021-11-26T22:30:45.209665] Retrieving project from snapshot: 20ecb1b8-eac2-479d-b625-1855ec8e5de4
-Starting the daemon thread to refresh tokens in background for process with pid = 57
-[2021-11-26T22:30:45.422956] Finished fetching snapshot.
-[2021-11-26T22:30:45.422994] Start fetching snapshot.
-[2021-11-26T22:30:45.423010] Retrieving project from snapshot: f8aef9e6-2792-4bb3-8910-d6a1e07c5109
-[2021-11-26T22:30:53.145462] Finished fetching snapshot.
-[2021-11-26T22:30:53.145500] Finished fetching snapshots.
-[2021-11-26T22:30:53.145511] Finished extract_project.
-[2021-11-26T22:30:53.145575] Finished fetching and extracting the control code.
-[2021-11-26T22:30:53.151474] Start run_history_prep.
-[2021-11-26T22:30:53.157437] Job preparation is complete.
-[2021-11-26T22:30:53.157564] Entering Data Context Managers in Sidecar
-[2021-11-26T22:30:53.158259] Running Sidecar prep cmd...
-[2021-11-26T22:30:53.534112] INFO azureml.sidecar.sidecar: Received task: enter_contexts. Running on Linux at /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/azureml/7406bd19-a309-4f96-9193-3783b4f4860d
-[2021-11-26T22:30:53.534730] INFO azureml.sidecar.sidecar: Invoking &#34;enter_contexts&#34; task with Context Managers: {&#34;context_managers&#34;: [&#34;Dataset:context_managers.Datasets&#34;, &#34;DataStoreCopy:context_managers.DataStores&#34;]}
-[2021-11-26T22:30:53.695] Enter __enter__ of DatasetContextManager
-[2021-11-26T22:30:53.696] SDK version: azureml-core==1.35.0.post1 azureml-dataprep==2.24.3. Session id: 5fcc8f93-da80-4680-aeda-4f08cc577ba2. Run id: 7406bd19-a309-4f96-9193-3783b4f4860d.
-[2021-11-26T22:30:53.696] Processing &#39;input_images&#39;.
-[2021-11-26T22:30:53.696] Mode: &#39;mount&#39;.
-[2021-11-26T22:30:53.696] Path on compute is specified: &#39;False&#39;.
-[2021-11-26T22:30:56.156] Processing dataset FileDataset
-{
-  &#34;source&#34;: [
-    &#34;(&#39;images_datastore&#39;, &#39;batchscoring/images/&#39;)&#34;
-  ],
-  &#34;definition&#34;: [
-    &#34;GetDatastoreFiles&#34;
-  ],
-  &#34;registration&#34;: {
-    &#34;id&#34;: &#34;5b780b8e-6694-4c2c-a97d-3cae4d26e7df&#34;,
-    &#34;name&#34;: &#34;input_images&#34;,
-    &#34;version&#34;: 1,
-    &#34;workspace&#34;: &#34;Workspace.create(name=&#39;ds_sandbox&#39;, subscription_id=&#39;dca8aaf5-3be9-45c1-a5ec-bdbd92f56b11&#39;, resource_group=&#39;sewald101_ds_study&#39;)&#34;
-  }
-}
-[2021-11-26T22:30:57.154] Mounting input_images to /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/input_images_5b780b8e-6694-4c2c-a97d-3cae4d26e7df as folder.
-[2021-11-26T22:30:57.154] Processing &#39;labels_input&#39;.
-[2021-11-26T22:30:57.154] Mode: &#39;mount&#39;.
-[2021-11-26T22:30:57.154] Path on compute is specified: &#39;False&#39;.
-[2021-11-26T22:30:57.284] Processing dataset FileDataset
-{
-  &#34;source&#34;: [
-    &#34;(&#39;images_datastore&#39;, &#39;batchscoring/labels/&#39;)&#34;
-  ],
-  &#34;definition&#34;: [
-    &#34;GetDatastoreFiles&#34;
-  ],
-  &#34;registration&#34;: {
-    &#34;id&#34;: &#34;dbf6bad9-eb0d-42fa-9a05-68d7cdd618e6&#34;,
-    &#34;name&#34;: &#34;label_ds&#34;,
-    &#34;version&#34;: 1,
-    &#34;workspace&#34;: &#34;Workspace.create(name=&#39;ds_sandbox&#39;, subscription_id=&#39;dca8aaf5-3be9-45c1-a5ec-bdbd92f56b11&#39;, resource_group=&#39;sewald101_ds_study&#39;)&#34;
-  }
-}
-[2021-11-26T22:30:57.327] Mounting labels_input to /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/labels_input_dbf6bad9-eb0d-42fa-9a05-68d7cdd618e6 as folder.
-[2021-11-26T22:30:57.340] Mounting input_images to /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/input_images_5b780b8e-6694-4c2c-a97d-3cae4d26e7df.
-[2021-11-26T22:30:58.341] Mounting labels_input to /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/labels_input_dbf6bad9-eb0d-42fa-9a05-68d7cdd618e6.
-[2021-11-26T22:30:59.342] Mounted input_images to /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/input_images_5b780b8e-6694-4c2c-a97d-3cae4d26e7df.
-[2021-11-26T22:30:59.342] Mounted labels_input to /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/labels_input_dbf6bad9-eb0d-42fa-9a05-68d7cdd618e6.
-[2021-11-26T22:30:59.442] Exit __enter__ of DatasetContextManager
-uri entered in sidecar: None
-Set Dataset input_images&#39;s target path to /mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/input_images_5b780b8e-6694-4c2c-a97d-3cae4d26e7df
-uri entered in sidecar: None
-Set Dataset labels_input&#39;s target path to /tmp/fd83978b-f138-4cf0-bab0-db91497e9e9f
-Sidecar adding paths_to_bind: [&#39;/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/tmpa5zqrpbm:/tmp/9e550a6c-efee-443b-9642-47b425f1a7cf/7d77ac5e-e42e-4163-8ad8-cecadc644153&#39;]
-Acquired lockfile /tmp/7406bd19-a309-4f96-9193-3783b4f4860d-datastore.lock to downloading input data references
-[2021-11-26T22:30:59.450860] INFO azureml.sidecar.task.enter_contexts: Entered Context Managers
-[2021-11-26T22:31:00.124452] Ran Sidecar prep cmd.
-[2021-11-26T22:31:00.124528] Running Context Managers in Sidecar complete.
-
-Streaming azureml-logs/70_driver_log.txt
-========================================
-2021/11/26 22:32:19 Got JobInfoJson from env
-2021/11/26 22:32:19 Starting App Insight Logger for task:  runTaskLet
-2021/11/26 22:32:19 Version: 3.0.01782.0001 Branch: 2021-11-05 Commit: 792fb33
-2021/11/26 22:32:19 Attempt 1 of http call to http://10.0.0.4:16384/sendlogstoartifacts/info
-2021/11/26 22:32:19 Send process info logs to master server succeeded
-2021/11/26 22:32:19 Attempt 1 of http call to http://10.0.0.4:16384/sendlogstoartifacts/status
-2021/11/26 22:32:19 Send process info logs to master server succeeded
-[2021-11-26T22:32:19.642619] Entering context manager injector.
-[2021-11-26T22:32:20.109868] context_manager_injector.py Command line Options: Namespace(inject=[&#39;ProjectPythonPath:context_managers.ProjectPythonPath&#39;, &#39;Dataset:context_managers.Datasets&#39;, &#39;RunHistory:context_managers.RunHistory&#39;, &#39;TrackUserError:context_managers.TrackUserError&#39;], invocation=[&#39;driver/amlbi_main.py&#39;, &#39;--client_sdk_version&#39;, &#39;1.34.0&#39;, &#39;--scoring_module_name&#39;, &#39;batch_scoring.py&#39;, &#39;--mini_batch_size&#39;, &#39;20&#39;, &#39;--error_threshold&#39;, &#39;1&#39;, &#39;--output_action&#39;, &#39;append_row&#39;, &#39;--logging_level&#39;, &#39;INFO&#39;, &#39;--run_invocation_timeout&#39;, &#39;60&#39;, &#39;--run_max_try&#39;, &#39;3&#39;, &#39;--create_snapshot_at_runtime&#39;, &#39;True&#39;, &#39;--append_row_file_name&#39;, &#39;parallel_run_step.txt&#39;, &#39;--output&#39;, &#39;/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/mounts/workspaceblobstore/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/scores&#39;, &#39;--process_count_per_node&#39;, &#39;2&#39;, &#39;--model_name&#39;, &#39;inception&#39;, &#39;--labels_dir&#39;, &#39;DatasetConsumptionConfig:labels_input&#39;, &#39;--input_fds_0&#39;, &#39;input_images&#39;])
-Script type = None
-[2021-11-26T22:32:20.113697] Entering Run History Context Manager.
-[2021-11-26T22:32:20.738186] Current directory: /mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/azureml/7406bd19-a309-4f96-9193-3783b4f4860d
-[2021-11-26T22:32:20.738385] Preparing to call script [driver/amlbi_main.py] with arguments:[&#39;--client_sdk_version&#39;, &#39;1.34.0&#39;, &#39;--scoring_module_name&#39;, &#39;batch_scoring.py&#39;, &#39;--mini_batch_size&#39;, &#39;20&#39;, &#39;--error_threshold&#39;, &#39;1&#39;, &#39;--output_action&#39;, &#39;append_row&#39;, &#39;--logging_level&#39;, &#39;INFO&#39;, &#39;--run_invocation_timeout&#39;, &#39;60&#39;, &#39;--run_max_try&#39;, &#39;3&#39;, &#39;--create_snapshot_at_runtime&#39;, &#39;True&#39;, &#39;--append_row_file_name&#39;, &#39;parallel_run_step.txt&#39;, &#39;--output&#39;, &#39;/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/mounts/workspaceblobstore/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/scores&#39;, &#39;--process_count_per_node&#39;, &#39;2&#39;, &#39;--model_name&#39;, &#39;inception&#39;, &#39;--labels_dir&#39;, &#39;$labels_input&#39;, &#39;--input_fds_0&#39;, &#39;input_images&#39;]
-[2021-11-26T22:32:20.738415] After variable expansion, calling script [driver/amlbi_main.py] with arguments:[&#39;--client_sdk_version&#39;, &#39;1.34.0&#39;, &#39;--scoring_module_name&#39;, &#39;batch_scoring.py&#39;, &#39;--mini_batch_size&#39;, &#39;20&#39;, &#39;--error_threshold&#39;, &#39;1&#39;, &#39;--output_action&#39;, &#39;append_row&#39;, &#39;--logging_level&#39;, &#39;INFO&#39;, &#39;--run_invocation_timeout&#39;, &#39;60&#39;, &#39;--run_max_try&#39;, &#39;3&#39;, &#39;--create_snapshot_at_runtime&#39;, &#39;True&#39;, &#39;--append_row_file_name&#39;, &#39;parallel_run_step.txt&#39;, &#39;--output&#39;, &#39;/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/mounts/workspaceblobstore/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/scores&#39;, &#39;--process_count_per_node&#39;, &#39;2&#39;, &#39;--model_name&#39;, &#39;inception&#39;, &#39;--labels_dir&#39;, &#39;/tmp/fd83978b-f138-4cf0-bab0-db91497e9e9f&#39;, &#39;--input_fds_0&#39;, &#39;input_images&#39;]
-
-WARNING:tensorflow:
-The TensorFlow contrib module will not be included in TensorFlow 2.0.
-For more information, please see:
-  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
-  * https://github.com/tensorflow/addons
-  * https://github.com/tensorflow/io (for I/O related ops)
-If you depend on functionality not listed there, please file an issue.
-
-2021/11/26 22:32:24 Not exporting to RunHistory as the exporter is either stopped or there is no data.
-Stopped: false
-OriginalData: 1
-FilteredData: 0.
-
-Streaming azureml-logs/75_job_post-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt
-===============================================================================================================
-[2021-11-26T22:33:28.711306] Entering job release
-[2021-11-26T22:33:29.472003] Starting job release
-[2021-11-26T22:33:29.472429] Logging experiment finalizing status in history service.
-[2021-11-26T22:33:29.472592] job release stage : upload_datastore starting...Starting the daemon thread to refresh tokens in background for process with pid = 295[2021-11-26T22:33:29.472826] job release stage : start importing azureml.history._tracking in run_history_release.
-[2021-11-26T22:33:29.473111] job release stage : copy_batchai_cached_logs starting...
-
-[2021-11-26T22:33:29.473236] job release stage : execute_job_release starting...
-
-[2021-11-26T22:33:29.473430] job release stage : copy_batchai_cached_logs completed...
-[2021-11-26T22:33:29.487016] Entering context manager injector.
-[2021-11-26T22:33:29.506100] job release stage : upload_datastore completed...
-[2021-11-26T22:33:29.566627] job release stage : send_run_telemetry starting...
-[2021-11-26T22:33:29.580273] get vm size and vm region successfully.
-[2021-11-26T22:33:29.589233] get compute meta data successfully.
-[2021-11-26T22:33:29.697778] job release stage : execute_job_release completed...
-[2021-11-26T22:33:29.790687] post artifact meta request successfully.
-[2021-11-26T22:33:29.849861] upload compute record artifact successfully.
-[2021-11-26T22:33:29.849913] job release stage : send_run_telemetry completed...
-[2021-11-26T22:33:29.850196] Running in AzureML-Sidecar, starting to exit user context managers...
-[2021-11-26T22:33:29.850291] Running Sidecar release cmd...
-[2021-11-26T22:33:29.860430] INFO azureml.sidecar.sidecar: Received task: exit_contexts. Running on Linux at /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/azureml/7406bd19-a309-4f96-9193-3783b4f4860d
-[2021-11-26T22:33:29.876] Enter __exit__ of DatasetContextManager
-[2021-11-26T22:33:29.876] Unmounting /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/input_images_5b780b8e-6694-4c2c-a97d-3cae4d26e7df.
-[2021-11-26T22:33:29.878] Finishing unmounting /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/input_images_5b780b8e-6694-4c2c-a97d-3cae4d26e7df.
-[2021-11-26T22:33:29.878] Unmounting /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/labels_input_dbf6bad9-eb0d-42fa-9a05-68d7cdd618e6.
-[2021-11-26T22:33:29.879] Finishing unmounting /mnt/hostfs/mnt/batch/tasks/shared/LS_root/jobs/ds_sandbox/azureml/7406bd19-a309-4f96-9193-3783b4f4860d/wd/labels_input_dbf6bad9-eb0d-42fa-9a05-68d7cdd618e6.
-[2021-11-26T22:33:29.879] Exit __exit__ of DatasetContextManager
-[2021-11-26T22:33:29.879762] Removing absolute paths from host...
-[2021-11-26T22:33:29.891481] INFO azureml.sidecar.task.exit_contexts: Exited Context Managers
-[2021-11-26T22:33:29.980664] Ran Sidecar release cmd.
-[2021-11-26T22:33:29.980747] Job release is complete
-
-StepRun(batchscoring-202111262205) Execution Summary
-=====================================================
-StepRun( batchscoring-202111262205 ) Status: Finished
-{&#39;runId&#39;: &#39;7406bd19-a309-4f96-9193-3783b4f4860d&#39;, &#39;target&#39;: &#39;gpu-cluster&#39;, &#39;status&#39;: &#39;Completed&#39;, &#39;startTimeUtc&#39;: &#39;2021-11-26T22:30:19.792126Z&#39;, &#39;endTimeUtc&#39;: &#39;2021-11-26T22:33:40.364096Z&#39;, &#39;services&#39;: {}, &#39;properties&#39;: {&#39;ContentSnapshotId&#39;: &#39;20ecb1b8-eac2-479d-b625-1855ec8e5de4&#39;, &#39;StepType&#39;: &#39;PythonScriptStep&#39;, &#39;ComputeTargetType&#39;: &#39;AmlCompute&#39;, &#39;azureml.moduleid&#39;: &#39;a4b80424-7d07-4984-a0e2-6fdc8fa0a231&#39;, &#39;azureml.runsource&#39;: &#39;azureml.StepRun&#39;, &#39;azureml.nodeid&#39;: &#39;cb0ff973&#39;, &#39;azureml.pipelinerunid&#39;: &#39;da22e2dd-35bd-4d57-bc2c-5cac1b69f766&#39;, &#39;azureml.pipeline&#39;: &#39;da22e2dd-35bd-4d57-bc2c-5cac1b69f766&#39;, &#39;azureml.pipelineComponent&#39;: &#39;masterescloud&#39;, &#39;_azureml.ComputeTargetType&#39;: &#39;amlcompute&#39;, &#39;ProcessInfoFile&#39;: &#39;azureml-logs/process_info.json&#39;, &#39;ProcessStatusFile&#39;: &#39;azureml-logs/process_status.json&#39;, &#39;azureml.parallelrunstep&#39;: &#39;true&#39;}, &#39;inputDatasets&#39;: [{&#39;dataset&#39;: {&#39;id&#39;: &#39;5b780b8e-6694-4c2c-a97d-3cae4d26e7df&#39;}, &#39;consumptionDetails&#39;: {&#39;type&#39;: &#39;RunInput&#39;, &#39;inputName&#39;: &#39;input_images&#39;, &#39;mechanism&#39;: &#39;Mount&#39;}}, {&#39;dataset&#39;: {&#39;id&#39;: &#39;dbf6bad9-eb0d-42fa-9a05-68d7cdd618e6&#39;}, &#39;consumptionDetails&#39;: {&#39;type&#39;: &#39;RunInput&#39;, &#39;inputName&#39;: &#39;labels_input&#39;, &#39;mechanism&#39;: &#39;Mount&#39;, &#39;pathOnCompute&#39;: &#39;/tmp/fd83978b-f138-4cf0-bab0-db91497e9e9f&#39;}}], &#39;outputDatasets&#39;: [], &#39;runDefinition&#39;: {&#39;script&#39;: &#39;driver/amlbi_main.py&#39;, &#39;command&#39;: &#39;&#39;, &#39;useAbsolutePath&#39;: False, &#39;arguments&#39;: [&#39;--client_sdk_version&#39;, &#39;1.34.0&#39;, &#39;--scoring_module_name&#39;, &#39;batch_scoring.py&#39;, &#39;--mini_batch_size&#39;, &#39;20&#39;, &#39;--error_threshold&#39;, &#39;1&#39;, &#39;--output_action&#39;, &#39;append_row&#39;, &#39;--logging_level&#39;, &#39;INFO&#39;, &#39;--run_invocation_timeout&#39;, &#39;60&#39;, &#39;--run_max_try&#39;, &#39;3&#39;, &#39;--create_snapshot_at_runtime&#39;, &#39;True&#39;, &#39;--append_row_file_name&#39;, &#39;parallel_run_step.txt&#39;, &#39;--output&#39;, &#39;$AZUREML_DATAREFERENCE_scores&#39;, &#39;--process_count_per_node&#39;, &#39;2&#39;, &#39;--model_name&#39;, &#39;inception&#39;, &#39;--labels_dir&#39;, &#39;DatasetConsumptionConfig:labels_input&#39;, &#39;--input_fds_0&#39;, &#39;input_images&#39;], &#39;sourceDirectoryDataStore&#39;: None, &#39;framework&#39;: &#39;Python&#39;, &#39;communicator&#39;: &#39;None&#39;, &#39;target&#39;: &#39;gpu-cluster&#39;, &#39;dataReferences&#39;: {&#39;scores&#39;: {&#39;dataStoreName&#39;: &#39;workspaceblobstore&#39;, &#39;mode&#39;: &#39;Mount&#39;, &#39;pathOnDataStore&#39;: &#39;azureml/7406bd19-a309-4f96-9193-3783b4f4860d/scores&#39;, &#39;pathOnCompute&#39;: None, &#39;overwrite&#39;: False}}, &#39;data&#39;: {&#39;input_images&#39;: {&#39;dataLocation&#39;: {&#39;dataset&#39;: {&#39;id&#39;: &#39;5b780b8e-6694-4c2c-a97d-3cae4d26e7df&#39;, &#39;name&#39;: None, &#39;version&#39;: &#39;1&#39;}, &#39;dataPath&#39;: None, &#39;uri&#39;: None}, &#39;mechanism&#39;: &#39;Mount&#39;, &#39;environmentVariableName&#39;: &#39;input_images&#39;, &#39;pathOnCompute&#39;: None, &#39;overwrite&#39;: False, &#39;options&#39;: None}, &#39;labels_input&#39;: {&#39;dataLocation&#39;: {&#39;dataset&#39;: {&#39;id&#39;: &#39;dbf6bad9-eb0d-42fa-9a05-68d7cdd618e6&#39;, &#39;name&#39;: None, &#39;version&#39;: &#39;1&#39;}, &#39;dataPath&#39;: None, &#39;uri&#39;: None}, &#39;mechanism&#39;: &#39;Mount&#39;, &#39;environmentVariableName&#39;: &#39;labels_input&#39;, &#39;pathOnCompute&#39;: &#39;/tmp/fd83978b-f138-4cf0-bab0-db91497e9e9f&#39;, &#39;overwrite&#39;: False, &#39;options&#39;: None}}, &#39;outputData&#39;: {}, &#39;datacaches&#39;: [], &#39;jobName&#39;: None, &#39;maxRunDurationSeconds&#39;: None, &#39;nodeCount&#39;: 1, &#39;instanceTypes&#39;: [], &#39;priority&#39;: None, &#39;credentialPassthrough&#39;: False, &#39;identity&#39;: None, &#39;environment&#39;: {&#39;name&#39;: &#39;parallelenv&#39;, &#39;version&#39;: &#39;Autosave_2021-11-26T22:08:14Z_53a0bfcd&#39;, &#39;python&#39;: {&#39;interpreterPath&#39;: &#39;python&#39;, &#39;userManagedDependencies&#39;: False, &#39;condaDependencies&#39;: {&#39;channels&#39;: [&#39;anaconda&#39;, &#39;conda-forge&#39;], &#39;dependencies&#39;: [&#39;python=3.6.2&#39;, {&#39;pip&#39;: [&#39;tensorflow-gpu==1.15.2&#39;, &#39;azureml-core~=1.34.0&#39;, &#39;azureml-dataset-runtime[fuse]~=1.34.0&#39;]}], &#39;name&#39;: &#39;azureml_d87624153eb188609f91bcdde2707629&#39;}, &#39;baseCondaEnvironment&#39;: None}, &#39;environmentVariables&#39;: {&#39;EXAMPLE_ENV_VAR&#39;: &#39;EXAMPLE_VALUE&#39;}, &#39;docker&#39;: {&#39;baseImage&#39;: &#39;mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.2-cudnn8-ubuntu18.04:20210806.v1&#39;, &#39;platform&#39;: {&#39;os&#39;: &#39;Linux&#39;, &#39;architecture&#39;: &#39;amd64&#39;}, &#39;baseDockerfile&#39;: None, &#39;baseImageRegistry&#39;: {&#39;address&#39;: None, &#39;username&#39;: None, &#39;password&#39;: None}, &#39;enabled&#39;: False, &#39;arguments&#39;: []}, &#39;spark&#39;: {&#39;repositories&#39;: [], &#39;packages&#39;: [], &#39;precachePackages&#39;: True}, &#39;inferencingStackVersion&#39;: None}, &#39;history&#39;: {&#39;outputCollection&#39;: True, &#39;directoriesToWatch&#39;: [&#39;logs&#39;], &#39;enableMLflowTracking&#39;: True, &#39;snapshotProject&#39;: True}, &#39;spark&#39;: {&#39;configuration&#39;: {&#39;spark.app.name&#39;: &#39;Azure ML Experiment&#39;, &#39;spark.yarn.maxAppAttempts&#39;: &#39;1&#39;}}, &#39;parallelTask&#39;: {&#39;maxRetriesPerWorker&#39;: 0, &#39;workerCountPerNode&#39;: 1, &#39;terminalExitCodes&#39;: None, &#39;configuration&#39;: {}}, &#39;amlCompute&#39;: {&#39;name&#39;: None, &#39;vmSize&#39;: None, &#39;retainCluster&#39;: False, &#39;clusterMaxNodeCount&#39;: 1}, &#39;aiSuperComputer&#39;: {&#39;instanceType&#39;: &#39;D2&#39;, &#39;imageVersion&#39;: &#39;pytorch-1.7.0&#39;, &#39;location&#39;: None, &#39;aiSuperComputerStorageData&#39;: None, &#39;interactive&#39;: False, &#39;scalePolicy&#39;: None, &#39;virtualClusterArmId&#39;: None, &#39;tensorboardLogDirectory&#39;: None, &#39;sshPublicKey&#39;: None, &#39;sshPublicKeys&#39;: None, &#39;enableAzmlInt&#39;: True, &#39;priority&#39;: &#39;Medium&#39;, &#39;slaTier&#39;: &#39;Standard&#39;, &#39;userAlias&#39;: None}, &#39;kubernetesCompute&#39;: {&#39;instanceType&#39;: None}, &#39;tensorflow&#39;: {&#39;workerCount&#39;: 1, &#39;parameterServerCount&#39;: 1}, &#39;mpi&#39;: {&#39;processCountPerNode&#39;: 1}, &#39;pyTorch&#39;: {&#39;communicationBackend&#39;: &#39;nccl&#39;, &#39;processCount&#39;: None}, &#39;hdi&#39;: {&#39;yarnDeployMode&#39;: &#39;Cluster&#39;}, &#39;containerInstance&#39;: {&#39;region&#39;: None, &#39;cpuCores&#39;: 2.0, &#39;memoryGb&#39;: 3.5}, &#39;exposedPorts&#39;: None, &#39;docker&#39;: {&#39;useDocker&#39;: True, &#39;sharedVolumes&#39;: True, &#39;shmSize&#39;: &#39;2g&#39;, &#39;arguments&#39;: []}, &#39;cmk8sCompute&#39;: {&#39;configuration&#39;: {}}, &#39;commandReturnCodeConfig&#39;: {&#39;returnCode&#39;: &#39;Zero&#39;, &#39;successfulReturnCodes&#39;: []}, &#39;environmentVariables&#39;: {}, &#39;applicationEndpoints&#39;: {}, &#39;parameters&#39;: []}, &#39;logFiles&#39;: {&#39;azureml-logs/20_image_build_log.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/azureml-logs/20_image_build_log.txt?sv=2019-07-07&amp;sr=b&amp;sig=K3gMcQtlDRI7uBza%2FEB2VMX%2FL%2Fy1v%2FRwU9ZrvWmER6w%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;azureml-logs/55_azureml-execution-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/azureml-logs/55_azureml-execution-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt?sv=2019-07-07&amp;sr=b&amp;sig=yIpxdMVuUv3ZKz3nOn%2BkYCMBETwq3M7iL47LR45jS6o%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;azureml-logs/65_job_prep-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/azureml-logs/65_job_prep-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt?sv=2019-07-07&amp;sr=b&amp;sig=s1fJGhfOT%2B%2FzFIbAsK9Ny6RTjMnPphTcFVVfDU%2Fm0tA%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;azureml-logs/70_driver_log.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/azureml-logs/70_driver_log.txt?sv=2019-07-07&amp;sr=b&amp;sig=7AxP7zzXaQa6CbLJtrR96RK20lJRHNwCF%2BB53ToKrQU%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;azureml-logs/75_job_post-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/azureml-logs/75_job_post-tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p.txt?sv=2019-07-07&amp;sr=b&amp;sig=F%2FxKE7e9JnNXO2n%2F7WfJvc5nyV%2FTzIZXeXLBUtYzk8Q%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;azureml-logs/process_info.json&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/azureml-logs/process_info.json?sv=2019-07-07&amp;sr=b&amp;sig=2W76su4g042w28fE5CyOuVnxKTaM6VgFrRuDx7LMQJ4%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;azureml-logs/process_status.json&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/azureml-logs/process_status.json?sv=2019-07-07&amp;sr=b&amp;sig=B0X7%2FDPBR05RFa8j6F4VNquhahX07MvMTSIfcpTijEA%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/78_azureml.log&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/78_azureml.log?sv=2019-07-07&amp;sr=b&amp;sig=EdMvUXvj8aCxiAZftxfMS0r6xhUs3619Tplv2tqzrJw%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/dataprep/backgroundProcess.log&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/dataprep/backgroundProcess.log?sv=2019-07-07&amp;sr=b&amp;sig=ZfoCm28UiTCVhpFuuxlTXvi4RitDseA%2FEjmHE953%2Fns%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/dataprep/backgroundProcess_Telemetry.log&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/dataprep/backgroundProcess_Telemetry.log?sv=2019-07-07&amp;sr=b&amp;sig=P%2BIjKZ50Vhh2PsDeLRgZOhFezAHhu0e5KWXzjfj%2F%2BYc%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/executionlogs.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/executionlogs.txt?sv=2019-07-07&amp;sr=b&amp;sig=LA6Ogrb6YjLKrRS1jzXV%2BhELtxD2pYTXdWTma%2FfLFnA%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/job_prep_azureml.log&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/job_prep_azureml.log?sv=2019-07-07&amp;sr=b&amp;sig=%2F4u6DJkTi1gv3NJJiB5RGNyjdOh0M8u7j2II%2FPEMRaE%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/job_release_azureml.log&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/job_release_azureml.log?sv=2019-07-07&amp;sr=b&amp;sig=rv60o6kADndWayZpsvixgDP3P3RuhJA9T2s1NG12LQc%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/sidecar/tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p/all.log&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/sidecar/tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p/all.log?sv=2019-07-07&amp;sr=b&amp;sig=k7No84ZyMzwO9I3dX3u8u64efJpltJ7AWviCyxamjJY%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/sidecar/tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p/task.enter_contexts.log&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/sidecar/tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p/task.enter_contexts.log?sv=2019-07-07&amp;sr=b&amp;sig=ZQQiZLfuioNAQHAL3rtkJHotGLTv0IInyi8VAIqIoZ8%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/sidecar/tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p/task.exit_contexts.log&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/sidecar/tvmps_41ab7ba540c3d148940b418667f4b0050d6cbb3ecb41e5c5119f0ce894ee1db3_p/task.exit_contexts.log?sv=2019-07-07&amp;sr=b&amp;sig=jfuo4Aw95u23RJA%2BznzdXC0dMWtTpi6F%2B3I8oE2pIQM%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/stderrlogs.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/stderrlogs.txt?sv=2019-07-07&amp;sr=b&amp;sig=Upk4jTM6fdbVBQ0JJaWfG5pkIhmp3ik%2FduZ0FeVB4K8%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;, &#39;logs/azureml/stdoutlogs.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.7406bd19-a309-4f96-9193-3783b4f4860d/logs/azureml/stdoutlogs.txt?sv=2019-07-07&amp;sr=b&amp;sig=iCf%2FGjVGy3rPy5w0M3m6s%2BHJ91SSYgOtyqZWiCzCdNM%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A32Z&amp;se=2021-11-27T06%3A33%3A32Z&amp;sp=r&#39;}, &#39;submittedBy&#39;: &#39;Stephen Wald&#39;}
-
-
-
-PipelineRun Execution Summary
-==============================
-PipelineRun Status: Finished
-{&#39;runId&#39;: &#39;da22e2dd-35bd-4d57-bc2c-5cac1b69f766&#39;, &#39;status&#39;: &#39;Completed&#39;, &#39;startTimeUtc&#39;: &#39;2021-11-26T22:07:07.737476Z&#39;, &#39;endTimeUtc&#39;: &#39;2021-11-26T22:33:41.707861Z&#39;, &#39;services&#39;: {}, &#39;properties&#39;: {&#39;azureml.runsource&#39;: &#39;azureml.PipelineRun&#39;, &#39;runSource&#39;: &#39;SDK&#39;, &#39;runType&#39;: &#39;SDK&#39;, &#39;azureml.parameters&#39;: &#39;{}&#39;, &#39;azureml.continue_on_step_failure&#39;: &#39;False&#39;, &#39;azureml.pipelineComponent&#39;: &#39;pipelinerun&#39;}, &#39;inputDatasets&#39;: [], &#39;outputDatasets&#39;: [], &#39;logFiles&#39;: {&#39;logs/azureml/executionlogs.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.da22e2dd-35bd-4d57-bc2c-5cac1b69f766/logs/azureml/executionlogs.txt?sv=2019-07-07&amp;sr=b&amp;sig=na2wHrj4PNZmGraq4LlQgU9rh%2Fc3PwhEEovI4S0hrl0%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A43Z&amp;se=2021-11-27T06%3A33%3A43Z&amp;sp=r&#39;, &#39;logs/azureml/stderrlogs.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.da22e2dd-35bd-4d57-bc2c-5cac1b69f766/logs/azureml/stderrlogs.txt?sv=2019-07-07&amp;sr=b&amp;sig=xYip4qpAJrt6kX4h0RcAgIkwHg1LSpAx4yNW%2FRiPJyU%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A43Z&amp;se=2021-11-27T06%3A33%3A43Z&amp;sp=r&#39;, &#39;logs/azureml/stdoutlogs.txt&#39;: &#39;https://sewald101storage01.blob.core.windows.net/azureml/ExperimentRun/dcid.da22e2dd-35bd-4d57-bc2c-5cac1b69f766/logs/azureml/stdoutlogs.txt?sv=2019-07-07&amp;sr=b&amp;sig=jjopRUXzVEsiQVbfeI5Fu7cNWsW7zx0qWf6xNUFZw4w%3D&amp;skoid=0e29e842-e5de-4432-aa92-0b18392498fc&amp;sktid=32e80a84-7f73-4228-a9e5-ed9b6e541eab&amp;skt=2021-11-26T19%3A15%3A03Z&amp;ske=2021-11-28T03%3A25%3A03Z&amp;sks=b&amp;skv=2019-07-07&amp;st=2021-11-26T22%3A23%3A43Z&amp;se=2021-11-27T06%3A33%3A43Z&amp;sp=r&#39;}, &#39;submittedBy&#39;: &#39;Stephen Wald&#39;}
-
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;Finished&#39;</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -16023,10 +14985,10 @@ PipelineRun Status: Finished
 <p>Run the following code to download the output file created from the <code>batch_scoring.py</code> script, then explore the scoring results.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -16048,115 +15010,6 @@ PipelineRun Status: Finished
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Prediction has  110  rows
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Filename</th>
-      <th>Prediction</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>n02691156_5992_airplane.jpg</td>
-      <td>rapeseed</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>n02764044_41120_axe.jpg</td>
-      <td>"plane, carpenters plane, woodworking plane"</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>n02766320_8764_baby_bed.jpg</td>
-      <td>crib, cot</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>n02769748_23541_backpack.jpg</td>
-      <td>backpack, back pack, knapsack, packsack, ruck...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>n02769748_3207_backpack.jpg</td>
-      <td>backpack, back pack, knapsack, packsack, ruck...</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>n02799071_5092_baseball.jpg</td>
-      <td>baseball</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>n02802426_5133_basketball.jpg</td>
-      <td>basketball</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>n02815834_4632_beaker.jpg</td>
-      <td>beaker</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>n02828884_8228_bench.jpg</td>
-      <td>park bench</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>n02834778_5255_bicycle.jpg</td>
-      <td>mountain bike, all-terrain bike, off-roader</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div>
